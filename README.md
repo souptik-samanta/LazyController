@@ -48,12 +48,46 @@ The board was designed with simplicity in mind — power in, relay out, WiFi in 
 3. Default settings (1.6mm, HASL, FR4) work fine
 
 ---
+# Schematic
+
+### ESP
+<p align="center">
+   <img src="./lib/lib2/image-1.png" alt="ESP schematic" style="max-width: 100%;transform: rotate(90deg); height: auto;" />
+</p>
+
+<details>
+   <summary><strong>USB</strong></summary>
+   <p align="center">
+      <img src="./lib/lib2/image.png" alt="USB schematic" style="max-width: 100%; height: auto;" />
+   </p>
+</details>
+
+<details>
+   <summary><strong>Switching</strong></summary>
+   <p align="center">
+      <img src="./lib/lib2/image-2.png" alt="Switching schematic" style="max-width: 100%; height: auto;" />
+   </p>
+</details>
+
+<details>
+   <summary><strong>ACDC</strong></summary>
+   <p align="center">
+      <img src="./lib/lib2/image-3.png" alt="ACDC schematic" style="max-width: 100%; height: auto;" />
+   </p>
+</details>
+
+<details>
+   <summary><strong>POWER</strong></summary>
+   <p align="center">
+      <img src="./lib/lib2/image-4.png" alt="POWER schematic" style="max-width: 100%; height: auto;" />
+   </p>
+</details>
 
 ## Flashing Firmware
 
 > Make sure you have the [Arduino IDE](https://www.arduino.cc/en/software) or [PlatformIO](https://platformio.org) installed.
 
-1. Add ESP8266/ESP32 board support if you haven't already:
+1. Add ESP32 board support if you haven't already:
    - In Arduino IDE → Preferences → Additional Board URLs:
      ```
      https://espressif.github.io/arduino-esp32/package_esp32_index.json
@@ -130,18 +164,18 @@ Once flashed and powered:
 |  |  |  |  |  |  |
 |  |  | TOTAL |  | 50.7084 |  |
 
-- check here [BOM](https://docs.google.com/spreadsheets/d/1Jlhe0WWFfPgNdCmWaUOwISSQ84eng0tOMz2COa2eSn8/edit?usp=sharing)
+- Full BOM sheet: [Open Google Sheet](https://docs.google.com/spreadsheets/d/1Jlhe0WWFfPgNdCmWaUOwISSQ84eng0tOMz2COa2eSn8/edit?usp=sharing)
 
-## YT
-- https://youtu.be/daNDijgMs3k
-more videos sooooon
+## YouTube
+- [Project video](https://youtu.be/daNDijgMs3k)
+- More videos soon.
 
-# Contact
-Email Souptik at me@souptik.me(me[at]souptik[dot]me)
-Or slack @Souptik Samanta
+## Contact
+- Email: [me@souptik.me](mailto:me@souptik.me)
+- Slack: @Souptik Samanta
 
-# Fund
-- Blueprint (without my mention the program wont run lol)
+## Funding / Support
+- Blueprint
 - HackClub
 ---
 
