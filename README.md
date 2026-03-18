@@ -19,8 +19,11 @@ LazyController is an IoT relay board designed around an ESP-based microcontrolle
 
 ```
 LazyController/
-├── Pcb/          # Schematic & PCB design files (KiCad / EasyEDA)
-├── production/   # Gerber files ready for PCB fabrication
+├── Cad/          # Enclosure and assembly CAD files
+├── Code/         # Firmware source (code.ino)
+├── lib/          # README images/assets
+├── Pcb/          # KiCad project files (schematic + PCB)
+├── production/   # Manufacturing outputs (BOM, positions, netlist, backups)
 └── README.md
 ```
 
@@ -127,7 +130,7 @@ Once flashed and powered:
 |  |  |  |  |  |  |
 |  |  | TOTAL |  | 50.7084 |  |
 
-
+- check here [BOM](https://docs.google.com/spreadsheets/d/1Jlhe0WWFfPgNdCmWaUOwISSQ84eng0tOMz2COa2eSn8/edit?usp=sharing)
 
 ## YT
 - https://youtu.be/daNDijgMs3k
