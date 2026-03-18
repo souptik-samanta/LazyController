@@ -128,5 +128,17 @@ Once flashed and powered:
 |  |  | TOTAL |  | 50.7084 |  |
 
 
+
+## YT
+- https://youtu.be/daNDijgMs3k
+more videos sooooon
+
+# Contact
+Email Souptik at me@souptik.me(me[at]souptik[dot]me)
+Or slack @Souptik Samanta
+
+# Fund
+- Blueprint (without my mention the program wont run lol)
+- HackClub
 ---
 
