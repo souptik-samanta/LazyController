@@ -108,14 +108,7 @@ Ordering a board:
 ## Wiring
 
 ```
-                        ┌──────────────┐
-                        │  LazyController │
-  5V Power ────────────▶│ VCC          │
-  GND      ────────────▶│ GND          │
-                        │              │
-                        │ RELAY OUT 1 ──────▶ Load (e.g. lamp, fan)
-                        │ RELAY OUT 2 ──────▶ Load ... u get how it works 
-                        └──────────────┘
+Power the controller → relays get activated → each relay switches its connected load.
 ```
 
 Relay outputs are SPDT — connect your load between **COM** and **NO** (normally open) for off-by-default behaviour.
