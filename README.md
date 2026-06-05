@@ -42,7 +42,7 @@ The board was designed with simplicity in mind — power in, relay out, WiFi in 
 <p align="center">
    <img src="./lib/image-1.png" alt="PCB schematic" style="transform: rotate(90deg); max-width: 100%; height: auto;" />
 </p>
-**Ordering a board:**
+Ordering a board:
 1. Zip the contents of `production/`
 2. Upload to [JLCPCB](https://jlcpcb.com) or [PCBWay](https://www.pcbway.com)
 3. Default settings (1.6mm, HASL, FR4) work fine
@@ -108,14 +108,7 @@ The board was designed with simplicity in mind — power in, relay out, WiFi in 
 ## Wiring
 
 ```
-                        ┌──────────────┐
-                        │  LazyController │
-  5V Power ────────────▶│ VCC          │
-  GND      ────────────▶│ GND          │
-                        │              │
-                        │ RELAY OUT 1 ──────▶ Load (e.g. lamp, fan)
-                        │ RELAY OUT 2 ──────▶ Load ... u get how it works 
-                        └──────────────┘
+Power the controller → relays get activated → each relay switches its connected load.
 ```
 
 Relay outputs are SPDT — connect your load between **COM** and **NO** (normally open) for off-by-default behaviour.
