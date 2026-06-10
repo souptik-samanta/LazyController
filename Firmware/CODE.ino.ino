@@ -1,41 +1,19 @@
-/*
-  ============================================================
-  XIAO ESP32-S3 — 4-Relay Web Controller
-  ============================================================
-  Hardware:
-    GP1 → 1kΩ → BC547 Base → Collector → Relay 1 coil → VCC
-    GP2 → 1kΩ → BC547 Base → Collector → Relay 2 coil → VCC
-    GP3 → 1kΩ → BC547 Base → Collector → Relay 3 coil → VCC
-    GP4 → 1kΩ → BC547 Base → Collector → Relay 4 coil → VCC
-    All BC547 Emitters → GND
-    Put a flyback diode (1N4007) across each relay coil (cathode to VCC)
-
-  Usage:
-    1. Set your WiFi credentials below
-    2. Flash to XIAO ESP32-S3
-    3. Open Serial Monitor (115200 baud) to see assigned IP
-    4. Open that IP in browser on same network
-  ============================================================
-*/
 
 #include <WiFi.h>
 #include <WebServer.h>
 
-// ── WiFi Credentials ─────────────────────────────────────
-const char* WIFI_SSID     = "Souptik";
-const char* WIFI_PASSWORD = "26596204";
 
-// ── Relay GPIO Pins ───────────────────────────────────────
-const int RELAY_PINS[4] = {1, 2, 3, 4};   // GP1, GP2, GP3, GP4
+const char* WIFI_SSID     = "XXX";
+const char* WIFI_PASSWORD = "asdas";
+
+
+const int RELAY_PINS[4] = {1, 2, 3, 4};
 bool relayState[4]      = {false, false, false, false};
 
 const char* RELAY_NAMES[4] = {"Relay 1", "Relay 2", "Relay 3", "Relay 4"};
 
 WebServer server(80);
 
-// ══════════════════════════════════════════════════════════
-//  HTML Page (served from XIAO)
-// ══════════════════════════════════════════════════════════
 String buildPage() {
   String html = R"rawhtml(
 <!DOCTYPE html>
@@ -371,9 +349,7 @@ function updateCard(relay, state) {
   return html;
 }
 
-// ══════════════════════════════════════════════════════════
-//  Route Handlers
-// ══════════════════════════════════════════════════════════
+
 
 void handleRoot() {
   server.send(200, "text/html", buildPage());
@@ -431,9 +407,7 @@ void handleStatus() {
   server.send(200, "application/json", json);
 }
 
-// ══════════════════════════════════════════════════════════
-//  Setup & Loop
-// ══════════════════════════════════════════════════════════
+
 
 void setup() {
   Serial.begin(115200);
@@ -466,7 +440,6 @@ void setup() {
     return;
   }
 
-  // Register routes
   server.on("/",        handleRoot);
   server.on("/toggle",  handleToggle);
   server.on("/all",     handleAll);
