@@ -3,6 +3,8 @@
 A compact WiFi-enabled relay controller built on a custom PCB. Flip switches, trigger appliances, and automate stuff — all from your phone or browser. No getting up required.
 
 ---
+BUILD
+<img width="2352" height="4160" alt="image" src="https://github.com/user-attachments/assets/57dfb0a7-1c6d-4c97-96fb-78b95f8a769f" />
 
 ## What is it?
 
